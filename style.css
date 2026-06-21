@@ -294,18 +294,62 @@ section { padding-block: 56px; }
 .notebox p { color: var(--ink-soft); }
 .notebox p:last-child { margin-bottom: 0; }
 
-.mail {
+/* 連絡先カード */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+.contact-card {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 6px;
-  font-weight: 700;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  gap: 14px;
+  flex: 1 1 240px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  text-decoration: none;
+  transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+}
+.contact-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-soft);
+  box-shadow: var(--shadow);
+}
+.contact-ico {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
   background: var(--accent-soft);
   color: var(--accent-deep);
-  padding: 6px 12px;
-  border-radius: 8px;
-  text-decoration: none;
+}
+.contact-ico svg { width: 21px; height: 21px; }
+.contact-ico--x {
+  background: #000;
+  color: #fff;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+  min-width: 0;
+}
+.contact-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--ink-faint);
+}
+.contact-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  word-break: break-all;
 }
 
 .disclaimer {
@@ -327,9 +371,21 @@ section { padding-block: 56px; }
   justify-content: space-between;
   gap: 16px;
 }
-.site-footer .f-links { display: flex; flex-wrap: wrap; gap: 18px; }
+.site-footer .f-links { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
 .site-footer a { color: var(--ink-soft); text-decoration: none; font-size: 14px; font-weight: 600; }
 .site-footer a:hover { color: var(--accent-deep); }
+.social-link {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff !important;
+  transition: transform .14s ease, background .14s ease;
+}
+.social-link svg { width: 15px; height: 15px; }
+.social-link:hover { background: var(--accent-deep); transform: translateY(-1px); }
 .copy { font-size: 13px; color: var(--ink-faint); }
 
 /* ---------- 法務ページ ---------- */
