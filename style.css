@@ -181,7 +181,7 @@ img { max-width: 100%; display: block; }
   gap: 12px;
 }
 
-/* スクリーンショット枠（プレースホルダー） */
+/* スクリーンショット */
 .shots {
   margin-top: 44px;
   display: grid;
@@ -192,17 +192,10 @@ img { max-width: 100%; display: block; }
   aspect-ratio: 9 / 19;
   border-radius: 22px;
   border: 1px solid var(--line);
-  background-image:
-    repeating-linear-gradient(135deg,
-      #f4f2fb 0 12px, #ece8f7 12px 24px);
-  display: grid;
-  place-items: center;
-  text-align: center;
-  color: var(--ink-faint);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 12px;
-  padding: 12px;
   box-shadow: var(--shadow);
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ---------- セクション共通 ---------- */
