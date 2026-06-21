@@ -295,7 +295,9 @@ section { padding-block: 56px; }
 .notebox p:last-child { margin-bottom: 0; }
 
 .mail {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-top: 6px;
   font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
