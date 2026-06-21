@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バトルデスク｜ポケモン対戦のダメージ計算・型管理・パーティ管理アプリ</title>
+  <meta name="description" content="バトルデスクは、ポケモン対戦向けのダメージ計算・型管理・パーティ管理をまとめて行えるiOSアプリです。すぐに計算でき、保存した型やパーティをすぐ呼び出せます。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="mark">BD</span>
+        バトルデスク
+      </a>
+      <nav class="nav">
+        <a href="index.html">トップ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="#support">サポート</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">iOS アプリ ・ ポケモン対戦補助ツール</span>
+      <h1>構築作りとダメージ計算を、<br>もっと手早く。</h1>
+      <p class="lead">バトルデスク / BattleDesk</p>
+      <p class="desc">
+        バトルデスクは、ポケモン対戦向けのダメージ計算・型管理・パーティ管理をまとめて行えるiOSアプリです。
+        計算画面をすぐ開けること、保存した型やパーティをすぐ呼び出せること、シンプルに使えることを重視しています。
+      </p>
+      <div class="hero-actions">
+        <!-- TODO: App Store URLに差し替え -->
+        <a class="btn btn-primary" href="#">App Storeで見る</a>
+        <a class="btn btn-secondary" href="privacy.html">プライバシーポリシー</a>
+      </div>
+
+      <!-- スクリーンショット枠（画像差し替え予定のプレースホルダー） -->
+      <div class="shots" aria-hidden="true">
+        <div class="shot">計算画面<br>screenshot</div>
+        <div class="shot">型ライブラリ<br>screenshot</div>
+        <div class="shot">パーティ管理<br>screenshot</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 特徴 -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Features</span>
+        <h2>バトルデスクの特徴</h2>
+        <p>対戦準備に必要なことを、ひとつのアプリで手早く。</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+          </div>
+          <h3>すぐにダメージ計算</h3>
+          <p>アプリを開いてすぐに計算を始められます。思いついたその場で素早く確認できます。</p>
+        </div>
+
+        <div class="feature">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z"/></svg>
+          </div>
+          <h3>型を保存</h3>
+          <p>ポケモンの型・技・努力値・性格・持ち物などを保存して、いつでも再利用できます。</p>
+        </div>
+
+        <div class="feature">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          </div>
+          <h3>パーティを管理</h3>
+          <p>6体単位のパーティを保存し、構築単位でまとめて管理できます。</p>
+        </div>
+
+        <div class="feature">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3>シンプルな操作</h3>
+          <p>複雑な機能を盛り込むより、手早く使えることを重視した画面設計です。</p>
+        </div>
+
+        <div class="feature">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          </div>
+          <h3>ローカル保存</h3>
+          <p>作成した型やパーティは端末内に保存されます。アカウント登録は不要です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使い方 -->
+  <section class="alt" id="howto">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">How to use</span>
+        <h2>使い方</h2>
+        <p>3ステップで、計算から構築管理まで。</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h3>計算タブで選ぶ</h3>
+            <p>計算タブで攻撃側・防御側・技を選び、ダメージを確認します。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h3>保存した型を呼び出す</h3>
+            <p>型ライブラリに保存した型を呼び出して、すぐに計算へ反映します。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h3>パーティ単位で管理</h3>
+            <p>パーティタブで、6体の構築単位でまとめて管理します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 広告について -->
+  <section id="ads">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Ads</span>
+        <h2>広告について</h2>
+      </div>
+      <div class="notebox">
+        <p>無料で利用できるようにするため、一部の画面に Google AdMob による広告が表示される場合があります。</p>
+        <ul>
+          <li>広告が読み込まれない場合は、広告枠を表示しません。</li>
+          <li>広告は、計算画面・パーティ画面のスクロール末尾に表示される場合があります。</li>
+          <li>型ライブラリ画面には広告を表示しません。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- サポート -->
+  <section class="alt" id="support">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Support</span>
+        <h2>サポート</h2>
+      </div>
+      <div class="notebox">
+        <p>不具合報告・改善要望は、下記のメールアドレスまでご連絡ください。</p>
+        <!-- TODO: support@example.com に差し替え -->
+        <a class="mail" href="mailto:support@example.com">support@example.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 免責・権利表記 -->
+  <section id="disclaimer">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Notice</span>
+        <h2>免責・権利表記</h2>
+      </div>
+      <div class="notebox disclaimer">
+        <p><strong>バトルデスクは非公式のファンツールです。</strong></p>
+        <p>本アプリおよび本サイトは、任天堂株式会社、株式会社ポケモン、Game Freak Inc.、Creatures Inc.とは関係ありません。</p>
+        <p>アプリ内で使用される名称・画像・データ等の権利は、各権利者に帰属します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="copy">© 2026 BattleDesk</div>
+      <div class="f-links">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <!-- TODO: support@example.com に差し替え -->
+        <a href="mailto:support@example.com">サポート</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
